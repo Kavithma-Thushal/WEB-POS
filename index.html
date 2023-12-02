@@ -28,11 +28,11 @@
         }
 
         .table-view {
-            margin-top: 120px;
+            margin-top: 45px;
         }
 
         .form-view {
-            margin-top: 48px;
+            margin-top: 45px;
         }
 
         .form-control::placeholder {
@@ -41,119 +41,125 @@
 
         .customer-head {
             color: white;
+            text-align: center;
+            margin-top: 100px;
         }
 
         @media all and (max-width: 992px) {
             .table-view {
-                margin-top: 60px;
+                margin-top: 45px;
             }
 
             .form-view {
-                margin-top: 12px;
+                margin-top: 30px;
             }
         }
     </style>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#" target="_blank">WEB | <span class="brand-span">POS</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" target="_blank">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" target="_blank">Customers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" target="_blank">Items</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" target="_blank">Orders</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#" target="_blank">Order Details</a>
-                </li>
-            </ul>
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" target="_blank">WEB | <span class="brand-span">POS</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" target="_blank">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" target="_blank">Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" target="_blank">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" target="_blank">Order Details</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</header>
 
-<section id="customers" class="container-fluid mt-5">
-    <div class="row">
-        <div class="col-lg-6 table-view">
-            <table class="table table-hover table-bordered table-dark">
-                <thead>
-                <tr>
-                    <th>Customer Id</th>
-                    <th>Customer Name</th>
-                    <th>Customer Address</th>
-                    <th>Customer Salary</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>C001</td>
-                    <td>Thushal</td>
-                    <td>Galle</td>
-                    <td>55000</td>
-                </tr>
-                <tr>
-                    <td>C002</td>
-                    <td>Kamal</td>
-                    <td>Colombo</td>
-                    <td>99000</td>
-                </tr>
-                <tr>
-                    <td>C003</td>
-                    <td>Namal</td>
-                    <td>Matara</td>
-                    <td>34000</td>
-                </tr>
-                <tr>
-                    <td>C004</td>
-                    <td>Sugath</td>
-                    <td>Kandy</td>
-                    <td>78000</td>
-                </tr>
-                <tr>
-                    <td>C005</td>
-                    <td>Sindhu</td>
-                    <td>Jaffna</td>
-                    <td>56000</td>
-                </tr>
-                </tbody>
-            </table>
+<main>
+    <section id="customers" class="container-fluid mt-5">
+        <h1 class="mb-4 customer-head">Customer Management</h1>
+        <div class="row">
+            <div class="col-lg-6 table-view">
+                <table class="table table-hover table-bordered table-dark">
+                    <thead>
+                    <tr>
+                        <th>Customer Id</th>
+                        <th>Customer Name</th>
+                        <th>Customer Address</th>
+                        <th>Customer Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>C001</td>
+                        <td>Thushal</td>
+                        <td>Galle</td>
+                        <td>55000</td>
+                    </tr>
+                    <tr>
+                        <td>C002</td>
+                        <td>Kamal</td>
+                        <td>Colombo</td>
+                        <td>99000</td>
+                    </tr>
+                    <tr>
+                        <td>C003</td>
+                        <td>Namal</td>
+                        <td>Matara</td>
+                        <td>34000</td>
+                    </tr>
+                    <tr>
+                        <td>C004</td>
+                        <td>Sugath</td>
+                        <td>Kandy</td>
+                        <td>78000</td>
+                    </tr>
+                    <tr>
+                        <td>C005</td>
+                        <td>Sindhu</td>
+                        <td>Jaffna</td>
+                        <td>56000</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-lg-6 form-view">
+                <form>
+                    <div class="mb-3">
+                        <input type="text" class="form-control mb-2 text-white" placeholder="Customer Id"
+                               style="background-color: #333333">
+                        <input type="text" class="form-control mb-2 text-white" placeholder="Customer Name"
+                               style="background-color: #333333">
+                        <input type="text" class="form-control mb-2 text-white" placeholder="Customer Address"
+                               style="background-color: #333333">
+                        <input type="text" class="form-control mb-2 text-white" placeholder="Customer Salary"
+                               style="background-color: #333333">
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="submit" class="btn btn-success">Search</button>
+                        <button type="submit" class="btn btn-warning">Update</button>
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="col-lg-6 form-view">
-            <h1 class="mb-4 customer-head">Customer Management</h1>
-            <form>
-                <div class="mb-3">
-                    <input type="text" class="form-control mb-2 text-white" placeholder="Customer Id"
-                           style="background-color: #333333">
-                    <input type="text" class="form-control mb-2 text-white" placeholder="Customer Name"
-                           style="background-color: #333333">
-                    <input type="text" class="form-control mb-2 text-white" placeholder="Customer Address"
-                           style="background-color: #333333">
-                    <input type="text" class="form-control mb-2 text-white" placeholder="Customer Salary"
-                           style="background-color: #333333">
-                </div>
-                <div class="mb-3">
-                    <button type="submit" class="btn btn-primary">Save</button>
-                    <button type="submit" class="btn btn-success">Search</button>
-                    <button type="submit" class="btn btn-warning">Update</button>
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </div>
-            </form>
-        </div>
-    </div>
-</section>
+    </section>
+</main>
 
 <script src="CSS/bootstrap-5.3.2/js/bootstrap.bundle.js"></script>
 </body>
