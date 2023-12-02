@@ -6,6 +6,10 @@
     <title>WEB | POS</title>
     <link rel="stylesheet" href="CSS/bootstrap-5.3.2/css/bootstrap.min.css">
     <style>
+        body {
+            background-color: black;
+        }
+
         .brand-span {
             color: dodgerblue;
         }
@@ -29,6 +33,14 @@
 
         .form-view {
             margin-top: 48px;
+        }
+
+        .form-control::placeholder {
+            color: grey;
+        }
+
+        .customer-head {
+            color: white;
         }
 
         @media all and (max-width: 992px) {
@@ -76,7 +88,7 @@
 <section id="customers" class="container-fluid mt-5">
     <div class="row">
         <div class="col-lg-6 table-view">
-            <table class="table table-hover table-bordered">
+            <table class="table table-hover table-bordered table-dark">
                 <thead>
                 <tr>
                     <th>Customer Id</th>
@@ -120,13 +132,17 @@
             </table>
         </div>
         <div class="col-lg-6 form-view">
-            <h1 class="mb-4">Customer Management</h1>
+            <h1 class="mb-4 customer-head">Customer Management</h1>
             <form>
                 <div class="mb-3">
-                    <input type="text" class="form-control mb-2" placeholder="Customer Id">
-                    <input type="text" class="form-control mb-2" placeholder="Customer Name">
-                    <input type="text" class="form-control mb-2" placeholder="Customer Address">
-                    <input type="text" class="form-control mb-2" placeholder="Customer Salary">
+                    <input type="text" class="form-control mb-2 text-white" placeholder="Customer Id"
+                           style="background-color: #2D2C2C">
+                    <input type="text" class="form-control mb-2 text-white" placeholder="Customer Name"
+                           style="background-color: #2D2C2C">
+                    <input type="text" class="form-control mb-2 text-white" placeholder="Customer Address"
+                           style="background-color: #2D2C2C">
+                    <input type="text" class="form-control mb-2 text-white" placeholder="Customer Salary"
+                           style="background-color: #2D2C2C">
                 </div>
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary">Save</button>
