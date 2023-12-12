@@ -663,128 +663,45 @@
         <div class="container-fluid">
             <h1 class="text-center">Order Details Management</h1>
             <div class="row">
-                <!-- Table Column -->
-                <div class="col-lg-6 mx-auto mt-5">
+                <div class="col-lg-12 mx-auto mt-5">
                     <div class="bg-dark rounded-3 p-4">
-                        <div class="row mb-4">
-                            <div class="input-group">
-                                <input type="search" class="form-control text-white bg-transparent"
-                                       placeholder="Enter Item Code"
-                                       aria-label="Enter Item Code" aria-describedby="basic-addon2"
-                                       style="border-radius: 5px">
-                                <div class="input-group-append">
-                                    <button class="btn btn-secondary" style="width: 100px; margin-left: 20px;">Search
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-lg-12">
                             <table class="table table-hover table-bordered table-dark">
                                 <thead>
                                 <tr>
+                                    <th>Order ID</th>
+                                    <th>Order Date</th>
+                                    <th>Customer ID</th>
                                     <th>Item Code</th>
-                                    <th>Item Name</th>
-                                    <th>Qty On HAnd</th>
-                                    <th>Price</th>
-                                    <th>Action</th> <!-- New column for the delete button -->
+                                    <th>Ordered Qty</th>
+                                    <th>Total</th>
+                                    <th>Discount</th>
+                                    <th>Net Total</th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
+                                    <td>O001</td>
+                                    <td>2023.12.12</td>
+                                    <td>C001</td>
                                     <td>I001</td>
-                                    <td>MSI Katana</td>
-                                    <td>45</td>
-                                    <td>350000</td>
-                                    <td>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
-                                    </td>
+                                    <td>2</td>
+                                    <td>200000</td>
+                                    <td>10</td>
+                                    <td>180000</td>
                                 </tr>
                                 <tr>
+                                    <td>O002</td>
+                                    <td>2023.12.15</td>
+                                    <td>C002</td>
                                     <td>I002</td>
-                                    <td>MSI Sword</td>
-                                    <td>67</td>
-                                    <td>335000</td>
-                                    <td>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>I003</td>
-                                    <td>Asus TUF</td>
-                                    <td>89</td>
+                                    <td>3</td>
                                     <td>300000</td>
-                                    <td>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>I004</td>
-                                    <td>Asus ROG</td>
-                                    <td>23</td>
-                                    <td>400000</td>
-                                    <td>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>I005</td>
-                                    <td>Dell</td>
-                                    <td>345</td>
-                                    <td>225000</td>
-                                    <td>
-                                        <button class="btn btn-danger btn-sm">Delete</button>
-                                    </td>
+                                    <td>30</td>
+                                    <td>200000</td>
                                 </tr>
                                 </tbody>
                             </table>
-                        </div>
-                        <div class="row justify-content-end mt-4">
-                            <div class="col-auto">
-                                <button class="btn btn-success" style="width: 100px;">Get All</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Form Column -->
-                <div class="col-lg-4 mx-auto mt-5">
-                    <div class="bg-dark rounded-3 p-4">
-                        <h3 class="text-center mb-4" style="color: dodgerblue">Manage Items</h3>
-
-                        <!-- Inputs -->
-                        <form>
-                            <div class="input-group">
-                                <div class="input-group mx-auto mb-4 mt-4" style="width: 350px">
-                                    <input type="text" class="form-control text-white" placeholder="Item Code"
-                                           aria-label="Item Code"
-                                           aria-describedby="basic-addon2" style="background-color: #3c3c3c">
-                                </div>
-                                <div class="input-group mx-auto mb-4" style="width: 350px">
-                                    <input type="text" class="form-control text-white" placeholder="Item Name"
-                                           aria-label="Item Name"
-                                           aria-describedby="basic-addon2" style="background-color: #3c3c3c">
-                                </div>
-                                <div class="input-group mx-auto mb-4" style="width: 350px">
-                                    <input type="text" class="form-control text-white" placeholder="Qty On Hand"
-                                           aria-label="Qty On Hand"
-                                           aria-describedby="basic-addon2" style="background-color: #3c3c3c">
-                                </div>
-                                <div class="input-group mx-auto mb-4" style="width: 350px">
-                                    <input type="text" class="form-control text-white" placeholder="Price"
-                                           aria-label="Price"
-                                           aria-describedby="basic-addon2" style="background-color: #3c3c3c">
-                                </div>
-                            </div>
-                        </form>
-
-                        <!-- Buttons -->
-                        <div class="row justify-content-evenly mt-4">
-                            <div class="col-auto">
-                                <button class="btn btn-danger mb-2" style="width: 100px">Clear</button>
-                            </div>
-                            <div class="col-auto">
-                                <button class="btn btn-primary" style="width: 100px">Add</button>
-                            </div>
                         </div>
                     </div>
                 </div>
