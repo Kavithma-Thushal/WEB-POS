@@ -531,8 +531,8 @@
                                            aria-label="Item Code" aria-describedby="basic-addon2"
                                            style="background-color: #3c3c3c">
                                     <input type="text" class="form-control text-white m-3 rounded-2"
-                                           placeholder="Item Name"
-                                           aria-label="Item Name" aria-describedby="basic-addon2"
+                                           placeholder="Item Description"
+                                           aria-label="Item Description" aria-describedby="basic-addon2"
                                            style="background-color: #3c3c3c">
                                 </div>
                             </div>
@@ -604,6 +604,55 @@
                                 </div>
                             </div>
                         </form>
+                    </div>
+                </div>
+
+                <!-- Clear All -->
+                <div class="row text-center">
+                    <div class="col mx-auto">
+                        <button class="btn btn-danger" style="width: 200px">Clear All</button>
+                    </div>
+                </div>
+
+                <!-- Table Column -->
+                <div class="col-lg-12 mx-auto mt-5">
+                    <div class="bg-dark rounded-3 p-4">
+                        <div class="col-lg-12">
+                            <table class="table table-hover table-bordered table-dark">
+                                <thead>
+                                <tr>
+                                    <th>Item Code</th>
+                                    <th>Item Description</th>
+                                    <th>Unit Price</th>
+                                    <th>Buying Qty</th>
+                                    <th>Net Total</th>
+                                    <th>Action</th> <!-- New column for the delete button -->
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>I001</td>
+                                    <td>MSI Katana</td>
+                                    <td>350000</td>
+                                    <td>2</td>
+                                    <td>700000</td>
+                                    <td>
+                                        <button class="btn btn-danger btn-sm">Remove</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>I002</td>
+                                    <td>MSI Sword</td>
+                                    <td>335000</td>
+                                    <td>3</td>
+                                    <td>1005000</td>
+                                    <td>
+                                        <button class="btn btn-danger btn-sm">Remove</button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
